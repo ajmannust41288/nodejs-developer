@@ -1,0 +1,30 @@
+{
+  "name": "tut",
+  "version": "1.0.0",
+  "description": "step by step node js lectures with practices",
+  "main": "index2.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajmannust41288/nodejs"
+  },
+  "keywords": [
+    "Nodejs",
+    "best",
+    "tutorials"
+  ],
+  "author": "Ajman khan Nustian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajmannust41288/nodejs/issues"
+  },
+  "homepage": "https://github.com/ajmannust41288/nodejs#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "color": "^4.2.3"
+  }
+  
+}
