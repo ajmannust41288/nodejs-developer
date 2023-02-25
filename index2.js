@@ -43,17 +43,48 @@
 //Take advantage of console.log string
 // const name='Sindre';
 // log(chalk.green('Hello %s'),name);
-const http=require('http');
-const data=[{name:'ajman1',email:'ajman1234@gmail.com',contact:'52287'},
-{name:'ajman2',email:'ajman234@gmail.com',contact:'58987'},
-{name:'ajman3',email:'ajman145@gmail.com',contact:'5567'},
-{name:'ajman4',email:'ajman12784@gmail.com',contact:'590987'},
-{name:'ajman5',email:'ajman1784@gmail.com',contact:'599287'},
-{name:'ajman6',email:'ajman15434@gmail.com',contact:'577787'},
-{name:'ajman7',email:'ajman12894@gmail.com',contact:'54447'}];
-http.createServer((req,resp)=>{
-    resp.writeHead(200,{'Content-Type':'application/json'});
-    resp.write(JSON.stringify(data));
-    resp.end();
-}).listen(5000);
+//===============================================================================================
+//====================================simple-node-logger uses
+// const log = require('simple-node-logger').createSimpleLogger('project.log');
+// const SimpleNodeLogger = require('simple-node-logger'),
+// 	opts = {
+// 		logFilePath:'mylogfile.log',
+// 		timestampFormat:'YYYY-MM-DD HH:mm:ss.SSS'
+// 	},
+// log = SimpleNodeLogger.createSimpleLogger( opts );
+// const log = require('simple-node-logger').createSimpleFileLogger('project.log');
+//sting literal exxports
 
+// var msg=require('./message.js');
+// console.warn(msg);
+//====================================   exports object
+// var msg=require('./message.js');
+// msg.log('hello wazir');
+//============================================================
+// var person=require('./data.js');
+// console.log('person full name is :  '+person.firstName+' '+person.middleName+' '+person.lastName);
+//=================================================================
+// var person=require('./person.js');
+// var person1=new person('jameski','borton');
+// console.log(person1.fullName());
+//============================================expressjs 
+// const express = require('express')
+// const app = express()
+// const port = 3000
+
+// app.get('/', (req, res) => {
+//   res.send('Hello World!');
+ 
+// })
+
+// app.listen(port, () => {
+//   console.log(`Example app listening on port ${port}`)
+// })
+//====================================================next example of http
+var http = require("http");
+
+http.createServer(function(request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.write("Hello World");
+  response.end();
+}).listen(8888);
