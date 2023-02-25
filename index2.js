@@ -43,17 +43,136 @@
 //Take advantage of console.log string
 // const name='Sindre';
 // log(chalk.green('Hello %s'),name);
-const http=require('http');
-const data=[{name:'ajman1',email:'ajman1234@gmail.com',contact:'52287'},
-{name:'ajman2',email:'ajman234@gmail.com',contact:'58987'},
-{name:'ajman3',email:'ajman145@gmail.com',contact:'5567'},
-{name:'ajman4',email:'ajman12784@gmail.com',contact:'590987'},
-{name:'ajman5',email:'ajman1784@gmail.com',contact:'599287'},
-{name:'ajman6',email:'ajman15434@gmail.com',contact:'577787'},
-{name:'ajman7',email:'ajman12894@gmail.com',contact:'54447'}];
-http.createServer((req,resp)=>{
-    resp.writeHead(200,{'Content-Type':'application/json'});
-    resp.write(JSON.stringify(data));
-    resp.end();
-}).listen(5000);
+// const http=require('http');
+// const data=[{name:'ajman1',email:'ajman1234@gmail.com',contact:'52287'},
+// {name:'ajman2',email:'ajman234@gmail.com',contact:'58987'},
+// {name:'ajman3',email:'ajman145@gmail.com',contact:'5567'},
+// {name:'ajman4',email:'ajman12784@gmail.com',contact:'590987'},
+// {name:'ajman5',email:'ajman1784@gmail.com',contact:'599287'},
+// {name:'ajman6',email:'ajman15434@gmail.com',contact:'577787'},
+// {name:'ajman7',email:'ajman12894@gmail.com',contact:'54447'}];
+// http.createServer((req,resp)=>{
+//     resp.writeHead(200,{'Content-Type':'application/json'});
+//     resp.write(JSON.stringify(data));
+//     resp.end();
+// }).listen(5000);
+//====================================================================
+// module.exports=function(firstName,lastName){
+//     this.firstName=firstName;
+//     this.lastName=lastName;
+//     this.fullName=function(){
+//         return this.firstName+''+this.lastName;
+//     }
+// }
+//=================================================================server.js
+// var http = require('http'); // 1 - Import Node.js core module
+
+// var server = http.createServer(function (req, res) {   // 2 - creating server
+
+//     //handle incomming requests here..
+//     res.writeHead('This is me ajman khan wazir')
+
+// });
+
+// server.listen(5000); //3 - listen for any incoming requests
+
+// console.log('Node.js web server at port 5000 is running..')
+//====================================================================example http
+
+// var http = require('http'); // Import Node.js core module
+
+// var server = http.createServer(function (req, res) {   //create web server
+//     if (req.url == '/') { //check the URL of the current request
+        
+//         // set response header
+//         res.writeHead(200, { 'Content-Type': 'text/html' }); 
+        
+//         // set response content    
+//         res.write('<html><body><p>This is home Page.</p></body></html>');
+//         res.end();
+    
+//     }
+//     else if (req.url == "/student") {
+        
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         res.write('<html><body><p>This is student Page.</p></body></html>');
+//         res.end();
+    
+//     }
+//     else if (req.url == "/admin") {
+        
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         res.write('<html><body><p>This is admin Page.</p></body></html>');
+//         res.end();
+    
+//     }
+//     else if (req.url == "/staff") {
+        
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         res.write('<html><body><p>This is staff Page. please follow this page for more updates</p></body></html>');
+//         res.end();
+    
+//     }
+//     else if (req.url == "/manager") {
+        
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         res.write('<html><body><h2>This is manager Page.</h2><br> <p> please follow this page for more info </p></body></html>');
+//         res.end();
+    
+//     }
+//     else if (req.url == "/manager/sale") {
+        
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         res.write('<html><body><h2>This is sale account Page.</h2><br> <p> please follow this page for more info </p></body></html>');
+//         res.end();
+    
+//     }
+//     else
+//         res.end('Invalid Request!');
+
+// });
+
+// server.listen(5000); //6 - listen for any incoming requests
+
+// console.log('Node.js web server at port 5000 is running..')
+//=========================================================================================server.js end=======================
+//data.js ===============================================================
+module.exports={
+    firstName:'Wakil',
+    middleName:'khan',
+    lastName:'wazir'
+};
+//===============================================================================message.js========
+// module.exports='hello world';
+//====================================   exports object
+// exports.SimpleMessage='Hello ajman';
+//=============================================
+module.exports.log = function (msg) { 
+    console.log(msg);
+};
+//=================================================================app.js==============
+var mymodule=require('./log.js');
+mymodule.info('  This is my first nodjs');
+//=================================================================data.js
+module.exports={
+    firstName:'Wakil',
+    middleName:'khan',
+    lastName:'wazir'
+};
+//=======================================================================log.js
+var log={
+    info:function(info){
+        console.log('info'+info);
+    },
+    warning:function(warning){
+        console.log('warning'+warning);
+    },
+    error:function(error){
+        console.log('error'+error);
+    }
+};
+module.exports=log;
+//====================================================================
+
+
 
