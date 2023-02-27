@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag event</title>
+    <style>
+.droptarget{
+    width: 100px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+    <h1>HTML Dom elements </h1>
+    <h2>drag event tutorial</h2>
+    <p>Drag the text btw two rectangles</p>
+
+    <div class="droptarget" ondrop="drop(event)" ondragenter="dragenter(event)"
+    ondragleave="dragleave(event)" 
+    ondragover="dragover(event)">
+    <p  ondragstart="dragstart(event)" draggable="true" id="dragtarget">Drage me</p>
+    </div>
+    <br>
+    <div class="droptarget" ondragenter="dragenter(event)" ondragleave="dragleave(event)"
+    ondragover="dragover(event)" ondrop="drop(event)">
+    <p id="demo"></p>
+
+    </div>
+    <script>
+        function dragstart(event){
+            event.dataTransfer.setData("Text",event.target.id);
+        }
+        function dragenter(event){
+            if(event.target.className=="droptarget"){
+                document.getElementById("demo").innerHTML="Enter the Drop Zone";
+                event.target.style.backgroundColor="lightblue";
+            }
+        }
+        function dragleave(event){
+            if(event.target.className=="droptarget"){
+                document.getElementById("demo").innerHTML="Left the Drop zone";
+                event.target.style.backgroundColor="green";
+            }
+        }
+        function dragover(event){
+            event.target.style.backgroundColor="yellow";
+        }
+        function drop(event){
+            event.preventDefault();
+            const data=event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+        }
+
+    </script>
+</body>
+</html>

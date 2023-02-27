@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loop statements in js</title>
+    <script>
+       //array uses
+       //----------example1
+    //    var ary=[10,20,30,40,50];
+    //    document.write(ary[0]); 
+    //-------------example2
+    // var ary=[10,20,30,40,50];
+    //    for(var a=0;a<=4;a++)
+    //    {
+    //     document.write(ary[a]+"<br>");
+    //    }
+    //---------------example3
+    // var ary=[10,20,30,40,50,60,70,80,90];
+    // document.write("<ul>");
+    //    for(var a=0;a<=8;a++)
+    //    {
+    //     document.write("<li>"+ary[a]+"</li>");
+    //    }
+    //    document.write("</ul>");
+    //---------------example 4
+    // var ary=[10,20,30,40,50,60,70,80,90];
+    // var sum=0;
+    // document.write("<ul>");
+    //    for(var a=0;a<=8;a++)
+    //    {
+    //     document.write("<li>"+ary[a]+"</li>");
+    //     sum=sum +ary[a];
+    //    }
+    //    document.write("</ul>");
+    //    document.write("Total Sum  : "+ sum);
+    //-----------------example 5
+    //  var ary=new Array();
+    //  ary[0]=10;
+    //  ary[1]="ajman";
+    //  ary[3]=true;
+    //  ary[4]=59;
+    // document.write("<ul>");
+    //    for(var a=0;a<=5;a++)
+    //    {
+    //     document.write("<li>"+ary[a]+"</li>");
+    //    }
+    //    document.write("</ul>");
+    //------------------example 6
+    // var ary=new Array(3);
+    // for(var g=0;g<3;g++){
+    //     ary[g]=prompt("Enter The Value  :");
+    // }
+    // document.write("<ul>");
+    //    for(var a=0;a<3;a++)
+    //    {
+    //     document.write("<li>"+ary[a]+"</li>");
+    //    }
+    //    document.write("</ul>");
+    //------------------------example 7
+    //---multidimensional examples
+//     var ary=[["haray",18,"Male","B.com"],
+// ["Sunny",19,"Male","BCA"],
+// ["Sarah",18,"Female","BCA"],
+// ["Tom",17,"Male","BA"]];
+// for(var a=0;a<4;a++){
+//     for(var b=0;b<4;b++){
+//         document.write(ary[a][b]+" ");
+//     }
+//     document.write("<br>");
+// }
+//---------------------example 8
+// var ary=[["haray",18,"Male","B.com"],
+// ["Sunny",19,"Male","BCA"],
+// ["Sarah",18,"Female","BCA"],
+// ["Tom",17,"Male","BA"],["Hurrain",18,"Female","Engg"],
+// ["khan",17,"Male","Engg"],["Jabir",19,"Female","Engg"]];
+// document.write("<table border='1px' cellspacing='0'>")
+// for(var a=0;a<ary.length;a++){
+//     document.write("<tr>");
+//     for(var b=0;b<ary[a].length;b++){
+//         document.write("<td>"+ary[a][b]+"</td> ");
+//     }
+//     document.write("</tr>");
+// }
+// document.write("</table>");
+//---------------------------example 9------------
+// var ary=[["haray",18,"Male","B.com","Bannu","PK"],
+// ["Sunny",19,"Male","BCA","Lahore","PK"],
+// ["Sarah",18,"Female","BCA","Karachi","PK"],
+// ["Tom",17,"Male","BA","Bahawalpur","PK"],["Hurrain",18,"Female","Engg","Bannu","PK"],
+// ["khan",17,"Male","Engg","DIKhan","PK"],["Jabir",19,"Female","Engg","Bannu","PK"]];
+// var aryc=["Name","Age","Gender","Education","City","Country"];
+// document.write("<h2 style='color: yellowgreen;text-align: left; font-size: larger;'>"
+//     +"The date are given below</h2>")
+// document.write("<table border='1px' cellspacing='0'>")
+//     document.write("<th>");
+//         document.write("<tr>");
+//         for(var c=0;c<aryc.length;c++)
+//         {   
+//             document.write("<td>"+"<strong>"+aryc[c]+
+//                 "</strong>"+"</td>");
+//         }
+//         document.write("</tr>");
+//         document.write("</th>");
+// for(var a=0;a<ary.length;a++){
+//     document.write("<tr>");
+//     for(var b=0;b<ary[a].length;b++){
+//         document.write("<td>"+ary[a][b]+"</td> ");
+//     }
+//     document.write("</tr>");
+// }
+// document.write("</table>");
+//------------------------------------Example 10....
+// var a=["Harry",18,"Male","BCA"];
+// document.write(a+"<br>");
+// a[0]="Sunny";
+// document.write(a+"<br>");
+// a[1]=20;
+// document.write(a+"<br>");
+//------------------------------example 10
+// var a=["Harry",18,"Male","BCA"];
+// document.write(a+"<br>");
+// a[0]="Sunny";
+// document.write(a+"<br>");
+// delete a[1];//delete this key 
+// document.write(a+"<br>");
+//-----------------------------------arraymethod
+// var a=["Harry","Aman","Jabir","kalim","Jamon"];
+// document.write(a+"<br><br> ");
+// a.sort();
+// document.write(a+"<br>");
+// a.reverse();
+// document.write(a+"<br><br>");
+// a.pop();//delete from last 
+// document.write(a+"<br><br>");
+// a.push("Rahul");//add at last
+// document.write(a+"<br><br>");
+// a.shift();//delete first
+// document.write(a+"<br><br>");
+// a.unshift("Rahuljan");//add first
+// document.write(a+"<br><br>");
+//-----------------------------------------------example 12
+// var a=["Harry","Aman","Jabir","kalim","Jamon"];
+// var b=["khalid","Noman"];
+// var c=a.concat(b);
+// document.write(c); 
+// //output: Harry,Aman,Jabir,kalim,Jamon,khalid,Noman
+//----------------------------example 13
+// var a=["Harry","Aman","Jabir","kalim","Jamon"];
+// var b=["khalid","Noman"];
+// var c=a.concat(b);
+// document.write(c+"<br><br>"); 
+// var d=c.join("-");
+// document.write(d+"<br><br>");
+
+// //output: Harry,Aman,Jabir,kalim,Jamon,khalid,Noman
+//----------------------------example 13
+// var a=["Harry","Aman","Jabir","kalim","Jamon"];
+// var b=["khalid","Noman"];
+// var d=a.slice(-1);
+// document.write(d+"<br><br>");
+// var d=a.slice(2);
+// document.write(d+"<br><br>");
+//----------------------------------example 14
+// var a=["Harry","Aman","Jabir","kalim","Jamon"];
+// document.write(a+"<br><br>");
+// a.splice(2,0,"Neha","Karan");
+// document.write(a+"<br><br>");
+//-------------------------------example 15-------------------
+// var a=["Aman","khan","jabir"];
+// document.write(a+"<br><br>");
+// a.splice(1,0,"kabir","kabir2");
+// document.write(a+"<br><br>");
+//Aman,khan,jabir
+// Aman,kabir,kabir2,khan,jabir
+//-------------------------------example 16-----------------------
+// var a=["Aman","khan","jabir"];
+// document.write(a+"<br><br>");
+// var b=Array.isArray(a);
+// document.write("This is an array --- "+b+"<br><br>");
+//--------------------------------example 17-------
+// var a=["Aman","khan","jabir"];
+// document.write(a+"<br><br>");
+// if(Array.isArray(a))
+// {
+//     document.write(" This is an array <br><br>");
+// }
+// else
+// {
+// document.write("This is not an array "+"<br><br>");
+// }
+//-----------------------------------example 18.......
+// var a=["Aman","khan","jabir"];
+// document.write(a+"<br><br>");
+// var b=a.indexOf("khan");
+// document.write(b+"<br><br>");//1
+//--------------------------------example 19.....
+//lastindexof() uses 
+// var a=["Aman","khan","jabir","jannan","khan","zuvaoir"];
+// document.write(a+"<br>");
+// var b=a.lastIndexOf("khan",2);
+// document.write(b+"<br>");//1
+//------------------------------example 20
+//include() uses 
+// var a=["Aman","khan","jabir","jannan","khan2","zuvaoir"];
+// // document.write(a+"<br>");
+// var b=a.includes("khan");
+// document.write(b+"<br>");//true
+//------------------example 21----------
+//-----some() uses
+// var ages=[10,13,18,20];
+// document.write(ages+"<br><br>");
+// var b=ages.some(checkAdult);
+// document.write(b+"<br><br>");
+// function checkAdult(age){
+//     return age>=18;
+// }
+//------------------------------example 22
+// var ages=[10,13,18,20];
+// document.write(ages+"<br><br>");
+// var b=ages.every(checkAdult);
+// document.write(b+"<br><br>");
+// function checkAdult(age){
+//     return age>=18;
+// }
+//--------------------------example 23
+// var ages=[10,13,18,20];
+// document.write(ages+"<br><br>");
+// var b=ages.find(checkAdult);
+// document.write(b+"<br><br>");//18
+// function checkAdult(age){
+//     return age>=18;
+// }
+//---------------------example 24
+// var ages=[10,13,18,20];
+// document.write(ages+"<br><br>");
+// var b=ages.filter(checkAdult);
+// document.write(b+"<br><br>");//18,20
+// function checkAdult(age){
+//     return age>=18;
+// }
+//----------------------example 25
+//tostring()
+// var ages=["ajman","kalim","noman"];
+// var b=ages.toString();
+// document.write(b+"<br>");
+// //ajman,kalim,noman
+//-----------------------example 26
+//fill()
+// var ages=["ajman","kalim","noman"];
+// var b=ages.fill("Arman");
+// document.write(b+"<br>");
+//Arman,Arman,Arman
+//--------------------example 27
+// var ages=["ajman","kalim","noman"];
+// document.write(ages+"<br>");
+//----------------------------------------
+
+    </script>
+</head>
+<body> 
+    
+</body>
+</html>

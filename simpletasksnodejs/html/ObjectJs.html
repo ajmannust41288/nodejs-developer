@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>statements in js</title>
+    <script>
+    //    var a={
+    //     fname:'yahoo',
+    //     lname:'Baba',
+    //     age:25,
+    //     email:'hello@yahoobaba.net',
+    //     favMovies:['Dhoom','Sholay','Hum','Ashiq2'],
+    //     salary:function(){
+    //         return 25000;
+    //     },
+    //     fullname:function(){
+    //         return this.fname+" "+this.lname;
+    //     },
+    //     living:{'city':'Bannu',
+    // 'country':'pakistan'}
+    //    };
+    //    console.log(a);
+    //    document.write(a.email+"<br><br>");
+    //    document.write(a.favMovies+"<br><br>");
+    //    document.write(a.salary()+"<br><br>");
+    //    document.write(a.fullname()+"<br>");
+    //    document.write(a.living.city+"<br>");
+       //---------------------------------part2
+//   var person=new Object();
+//   person.firstName='Ram';
+//   person.lastName='Kumar';
+//   person.age=25;
+//   document.write(person.firstName);//Ram
+//---------------------------------------part 3
+// var student=[
+//     {name:'Ram',age:15},
+//     {name:'Karan',age:13},
+//     {name:'Rahul',age:14}
+// ];
+// console.log(student);
+// for(var a=0;a<student.length;a++){
+//     document.write(student[a].name+" "+ student[a].age+"<br> ");
+// }
+//-------------------------------------part 4
+// const a=[10,20,30];
+// a[1]=25;
+// console.log(a);
+//-------------------
+// var obj={
+//     firstName:"Yahoo",
+//     lastName:"Baba", 
+//     Age:25,
+//     email:"hello@yahoobaba.net"
+// };
+// for(var key in obj){
+//     document.write(key+":"+obj[key]+"<br>");
+// }
+//----------------------------
+// var ary=[11,4,9,16];
+// var b=ary.map(test);
+// var c=ary.map(add);
+// var d=ary.map(modulus);
+// document.write(b+"<br><br>");
+// document.write(c+"<br><br>");
+// document.write(d+"<br><br>");
+// function test(x){
+//     return x*10;
+//     //110,40,90,160
+// }
+// function add(x){
+//     return x+x;//22,8,18,32
+// }
+// function modulus(x){
+//     return x%2;//1,0,1,0
+// }
+//------------------------------example 
+// var ary=[{fname:"Yahoo",lname:"Baba"},
+// {fname:"Rahul",lname:"Kumar"},
+// {fname:"karan",lname:"Sharma"}];
+// var b=ary.map(test);
+// document.write(b);
+// function test(x){
+//     return x.fname;//Yahoo,Rahul,karan
+// }
+//---------------------------example
+var ary=[{fname:"Yahoo",lname:"Baba"},
+{fname:"Rahul",lname:"Kumar"},
+{fname:"karan",lname:"Sharma"}];
+var b=ary.map(test);
+document.write(b);
+function test(x){
+    return x.fname +" "+x.lname+" ";
+    //Yahoo Baba ,Rahul Kumar ,karan Sharma
+}
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
