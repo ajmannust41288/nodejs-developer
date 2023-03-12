@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "640afb5eb3f5a35b68b39bdc"
+  },
+  "name": "ajman",
+  "age": 24,
+  "city": "islamabad"
+},{
+  "_id": {
+    "$oid": "640afb85b3f5a35b68b39bdd"
+  },
+  "name": "kalim",
+  "age": 24,
+  "city": "bannu"
+},{
+  "_id": {
+    "$oid": "640e29b12e883769ef1f8d9a"
+  },
+  "name": "Company Inc",
+  "address": "Highway 37"
+},{
+  "_id": {
+    "$oid": "640e2b240e7dcab4faee05d3"
+  },
+  "name": "jalil khan",
+  "address": "Bannu "
+},{
+  "_id": {
+    "$oid": "640e2c342818f6c08fa75270"
+  },
+  "name": "jalil",
+  "address": "Bannu "
+},{
+  "_id": {
+    "$oid": "640e2c342818f6c08fa75271"
+  },
+  "name": "jalil2",
+  "address": "Bannu2 "
+},{
+  "_id": {
+    "$oid": "640e2c342818f6c08fa75272"
+  },
+  "name": "jalil3",
+  "address": "Bannu3 "
+}]
