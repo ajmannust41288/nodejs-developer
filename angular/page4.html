@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+
+        First Name: <input type="text" ng-model="firstName"><br>
+        Last Name: <input type="text" ng-model="lastName"><br>
+        <br>
+        Full Name: {{firstName + " " + lastName}}
+        
+        </div>
+        
+        <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+          $scope.firstName= "John";
+          $scope.lastName= "Doe";
+        });
+        </script>  -->
+        <!-- ===================================================example 2 -->
+<!-- <div ng-app="myapp" ng-controller="mycontroller">
+Fname: <input type="text" ng-module="fname"><br>
+Mname: <input type="text" ng-module="mname"><br>
+Lname: <input type="text" ng-module="lname"><br>
+Age: <input type="text" ng-module="age"><br>
+City: <input type="text" ng-module="city"><br><br>
+<p> your full name {{fname+mname+lname}}</p>
+<p> your age  {{age}} and your city is : {{city}}</p>
+</div>
+
+        <script>
+            var app=angular.module("myapp",[]);
+            app.controller("mycontroller",function($scope){
+                $scope.fname="ajman";
+                $scope.mname="ullah";
+                $scope.lname="khan";
+                $scope.age=24;
+                $scope.city="peshawar";
+
+            });
+        </script> -->
+        <!-- ========================================================example 3 -->
+    <!-- <div ng-app="" ng-init="firstname='ajman';lastname='khan'">
+        <p>full name is <span ng-bind="firstname +''+lastname"></span></p>
+    </div> -->
+    <!-- =======================================================example 4 -->
+    <!-- <p>Try to change the names.</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+</script> -->
+<!-- ===================================================example 5 -->
+<!-- <div ng-app="" ng-init="person={firstName:'John',lastName:'Doe',age:23,city:'bannu'}"> -->
+
+    <!-- <p>The city is  {{ person.city }}</p> -->
+    <!-- <p>The name is <span ng-bind="person.lastName"></span></p>
+    
+    </div> -->
+<!-- =========================================example 6 -->
+<div ng-app="" ng-init="points=[1,15,19,2,40]">
+
+    <p>The third result is {{ points[2] }}</p>
+    
+    </div>
+
+</body>
+</html>

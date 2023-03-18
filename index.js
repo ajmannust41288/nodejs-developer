@@ -1,20 +1,68 @@
-// var mysql = require('mysql');
+const express=require('express');
+const app=express();
+app.get("",(req,resp)=>{
+    resp.send(`
+    <h1>welcome to home page</h1>
+    <br/>
+    <a href="/about">Go To About page</a>
+    <br/> <br/>
+    <a href="/help">Go To help page</a>
+    <br/><br/>
+    <a href="/customer">Go To customer page</a>
+    <br/><br/>
+    <a href="/contact">Go To contact page</a>
+    
+    `);
 
-// var con = mysql.createConnection({
-//   host: "localhost",
-//   user: "yourusername",
-//   password: "yourpassword",
-//   database: "mydb"
-// });
+});
+app.get("/about",(req,resp)=>{
+    resp.send(
+        [
+            {
+                name:"ajman",
+                email:"ajman65@gmail.com",
+                city:"bannu"
+            },
+            {
+                name:"kalim",
+                email:"ajman65@gmail.com",
+                city:"bannu"
+            },
+            {
+                name:"kalim",
+                email:"ajman65@gmail.com",
+                city:"bannu"
+            }
+        ]
+        
+    );
 
-// con.connect(function(err) {
-//   if (err) throw err;
-//   console.log("Connected!");
-//   var sql = "CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))";
-//   con.query(sql, function (err, result) {
-//     if (err) throw err;
-//     console.log("Table created");
-//   });
-// });
-const color=require("color");
-console.log("hello".red);
+});
+app.get("/help",(req,resp)=>{
+    resp.send(`
+    <h1>welcome to help page</h1>
+    <br/>
+    <a href="/">Go To home page</a>
+    `
+   );
+
+});
+app.get("/customer",(req,resp)=>{
+    resp.send(`
+    <h1>welcome to help page</h1>
+    <input type="text" name="username" placeholder="enter your name" />
+    <input type="password" name="password" placeholder="enter your password" />
+    <br/>
+    <a href="/">Go To home page</a>
+    `);
+
+});
+app.get("/contact",(req,resp)=>{
+    resp.send(`
+    <h1>welcome to contact page</h1>
+    <br/>
+    <a href="/">Go To home page</a>
+    `);
+
+});
+app.listen(5000);
