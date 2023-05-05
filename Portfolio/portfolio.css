@@ -1,0 +1,287 @@
+/* Global styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Navigation styles */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #333 !important;
+}
+
+.nav-link.active {
+    color: #008080 !important;
+    font-weight: 600;
+}
+
+/* Hero section styles */
+#hero {
+    height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero:before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#hero h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* About section styles */
+#about {
+    background-color: #f7f7f7;
+    padding: 6rem 0;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Experience section styles */
+#experience {
+    background-color: #fff;
+    padding: 6rem 0;
+}
+
+#experience h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#experience .card-title {
+    color: #333;
+    font-size: 1.5rem;
+   
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    }
+    
+    #experience .card-subtitle {
+    color: #008080;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    #experience .card-text {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    /* Skills section styles */
+    #skills {
+    background-color: #f7f7f7;
+    padding: 6rem 0;
+    }
+    
+    #skills h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    #skills .skill {
+    margin-bottom: 1.5rem;
+    }
+    
+    #skills .skill-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    }
+    
+    #skills .skill-bar {
+    background-color: #008080;
+    height: 10px;
+    border-radius: 10px;
+    }
+    
+    #skills .skill-progress {
+    background-color: #fff;
+    height: 10px;
+    border-radius: 10px;
+    }
+    
+    /* Projects section styles */
+    #projects {
+    background-color: #fff;
+    padding: 6rem 0;
+    }
+    
+    #projects h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    #projects .project {
+    margin-bottom: 1.5rem;
+    }
+    
+    #projects .project-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    }
+    
+    #projects .project-description {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    #projects .project-link {
+    color: #008080;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    /* Contact section styles */
+    #contact {
+    background-color: #f7f7f7;
+    padding: 6rem 0;
+    }
+    
+    #contact h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    }
+    
+    #contact form {
+    margin-top: 2rem;
+    }
+    
+    #contact input,
+    #contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    }
+    
+    #contact textarea {
+    height: 10rem;
+    }
+    
+    #contact button {
+    background-color: #008080;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    }
+    
+    #contact button:hover {
+    background-color: #006666;
+    }
+    /* Footer section styles  */
+    #footer {
+        background-color: #333;
+        color: #fff;
+        padding: 2rem 0;
+        }
+        
+        #footer p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        }
+        
+        #footer a {
+        color: #fff;
+        }
+        
+        #footer a:hover {
+        color: #008080;
+        }
