@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app='ngSnake'>
+<!-- connect 4 game using angular js and javascript  
+ajman khan software engineer  -->
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head> 
+
+  <body ng-controller="snakeCtrl">
+    <h2>Tic Tac game </h2>
+	<div id="startGame" ng-click="newGame()">New Game</div>
+    Player Turn : {{player === 1 ? '1' : '2'}}
+    <div id="gameContainer">
+      <div>
+          <div class="column" ng-repeat="column in board" ng-click="placeToken($index)">
+              <div ng-style="setStyling(val)" class="circle" ng-repeat="val in column track by $index">&nbsp</div>
+          </div>
+      </div>
+    </div>
+    
+
+    <script src="angular.min.js"></script>
+    <script src="script.js"></script> 
+    <footer>
+      <p> Developed by <a href="https://ajzones.uk">Ajman khan </a></p>
+    </footer>
+  </body>
+
+</html>
